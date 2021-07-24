@@ -1,0 +1,38 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+
+        Scanner in=new Scanner(System.in);
+        System.out.print("Enter Y or N: ");
+        String string = in.nextLine();
+        if(string.equals("N"))
+        {
+            try
+            {
+                throw new Exception("Please enter Y");
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+
